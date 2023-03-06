@@ -8,18 +8,23 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:ui": "turbo build --filter=@odoenet/ui",
     "dev": "turbo run dev",
+    "dev:app": "turbo dev --filter=@odoenet/app",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
+    "resolve-pkg": "^2.0.0",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@arcgis/core": "^4.26.5"
+  },
   "packageManager": "npm@8.15.0"
 }
